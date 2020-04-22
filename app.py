@@ -159,6 +159,3 @@ def index():
 if __name__ == "__main__":
     app.debug = True
     app.run()
-
-    import webbrowser
-    webbrowser.open("http://localhost:5000")

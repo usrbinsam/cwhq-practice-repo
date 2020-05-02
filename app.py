@@ -22,7 +22,7 @@ def index():
     components = []
 
     try:
-        git_version = check_output("git --version").decode("utf8").strip()
+        git_version = check_output("git --version", shell=True).decode("utf8").strip()
     except (CalledProcessError, FileNotFoundError):
         git_version = "(not installed)"
 

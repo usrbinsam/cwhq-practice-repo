@@ -71,12 +71,13 @@ Before beginning development, we want to perform some basic setup in Visual Stud
 All Flask projects require some 3rd party modules - the Flask library is written in Python but it does not come with the default Python installer. We need to install Flask ourselves, but luckily this is very easy with `pip` which can install 3rd party modules like Flask with minimal effort.
 
 - Open a new terminal within VS Code using Ctrl+` (this is the backtick key, it is found below the Esc key)
+- (Windows users only!) click the dropdown in the top right corner of the terminal pane that opened, and click **Select Default Shell**, then pick `cmd.exe`
 - Type in `pip install -U pip` and press `Enter` to ensure pip is at the latest version
 - Type in `pip install -U -r requirements.txt` to install all 3rd party requirements specific to this project
 
 ## Settings
 
-TODO - all settings should be defined in a workspace `settings.json` file. The only difference will be settings that conflict on macOS and Windows installations, so those settings will need to be modified by the user in their own User `settings.json`. 
+TODO - all settings should be defined in a workspace `settings.json` file. The only difference will be settings that conflict on macOS and Windows installations, so those settings will need to be modified by the user in their own User `settings.json`.
 
 ## Launching Flask
 

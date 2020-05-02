@@ -2,5 +2,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "editor.rulers": [0, 119]
+    "editor.rulers": [0, 119],
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": false,"
 }

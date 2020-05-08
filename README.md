@@ -119,7 +119,7 @@ you create a new pipenv environment (number 3 in step 4a)
 - Select the interpreter that has `pipenv` in the name and matches the name of the workspace you chose.
   ![Select Workspace](screenshots/selectInterpreter2.png)
 
-## Launching Flask
+# Step 5: Launching Flask
 
 Flask applications can be launched several different ways, but the most common way is on the command line using the `flask` command that comes with the flask pip package.
 
@@ -134,9 +134,79 @@ Flask applications can be launched several different ways, but the most common w
 
 - Open a web browser tab  to the link shown in your terminal, most likely `http://127.0.0.1:5000`
 
-If everything installed correctly, you should see a screen like this:
+If everything installed correctly, you should see a screen like this in your browser:
 
 ![Hello World](screenshots/helloWorld.png)
+
+
+# Step 6: Try branching, committing, and opening a PR
+
+To test your ability to use git and GitHub's workflow, you will make a new git branch from this very repository, add your name to an HTML file, and push that branch to GitHub. Then you will make a Pull Request to have it merged with master.
+
+## Create a new branch
+
+Creating a new branch allows you to work a feature for your project. The feature you will be writing in this repository is simply adding your name to the list of contributors in `docs/index.html`. You shouldn't just add your name to the file without creating a branch first.
+
+- Open the VSCode Command Palette and type in "create branch" and select "Git: Create Branch ..."
+  ![Create Branch](screenshots/createBranch.png)
+
+- Pick a name for your branch. Typically you'd use 1 or 2 words joined by hyphens instead of spaces that describes the feature.
+
+  ![Branch Name](screenshots/createBranch.png)
+
+VSCode will create the branch and checkout your new branch for you. In the bottom left corner of VSCode you will see "master" turn into your new branch name. Whichever branch is currently checked out is displayed there.
+
+![Current Branch](screenshots/currentBranch.png)
+
+
+## Write code
+
+This is something you already know. Go to `docs/index.html` and add your name below all of the existing names in the same HTML format as the others.
+
+## Commit and push your changes
+
+Once you've completed a small part of your feature, you **commit** your changes to git. When you commit, you describe in a sentence or two what your changes are.
+
+- Click the VCS icon in the left side navigation bar of VSCode
+
+  ![VCS Nav](screenshots/vcsNav.png)
+
+- Under "Changes" you should see `index.html` which indicates git sees you have made revisions to this file. Click the plus sign next to it to "Stage" that change. This is so you can change multiple files at once, and commit them each separately if you wish.
+
+- Enter in a message that describes what you did. Something like: "adding myself to the list of contributors"
+- Click the Checkbox to commit your changes with your commit message.
+
+  ![git-commit](screenshots/gitCommit.png)
+
+- Click the three horizontal dots above the textbox where you entered your commit message, and click Push. This will push your changes to GitHub's remote repository so you can open a pull request, and so others can see your changes.
+
+  ![git-push](screenshots/gitPush.png)
+
+
+- Git will see this is a new branch and ask if you wish to publish it. Just click OK.
+
+  ![New Branch](screenshots/gitPublish.png)
+
+
+:warning: You must have "write" permission in GitHub in order to push to this repository, or you will get a Permission Denied message. Ask your Team Leader to add you if you cannot push.
+
+
+## Make a Pull Request
+
+Go to this repository's GitHub page [here](https://github.com/usrbinsam/cwhq-practice-repo) and click the Pull Requests tab.
+
+- Make sure you are logged in to GitHub.
+- GitHub see you just pushed a new branch and will offer to make a pull request for you. Click Compare & pull request
+'
+  ![New Pull Request](screenshots/githubNewBranch.png)
+
+- This opens a new screen where you can type in a title and description for what your proposed changes are. You and other contributors will be able to make comments on your Pull Request.
+
+  ![Open PR](screenshots/openPR.png)
+
+- Click Create Pull Request
+
+Now you must wait for a Project Leader to approve your pull request. GitHub will email you once it has been merged, or if anyone makes comments on your Pull Request to make any changes. If you need to make changes, just repeat the Commit & Push steps above, and GitHub will automatically include those changes in this PR for you.
 
 
 # VSCode Useful Shortcuts

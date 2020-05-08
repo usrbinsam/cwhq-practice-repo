@@ -119,7 +119,7 @@ you create a new pipenv environment (number 3 in step 4a)
 - Select the interpreter that has `pipenv` in the name and matches the name of the workspace you chose.
   ![Select Workspace](screenshots/selectInterpreter2.png)
 
-## Launching Flask
+# Step 5: Launching Flask
 
 Flask applications can be launched several different ways, but the most common way is on the command line using the `flask` command that comes with the flask pip package.
 
@@ -134,10 +134,47 @@ Flask applications can be launched several different ways, but the most common w
 
 - Open a web browser tab  to the link shown in your terminal, most likely `http://127.0.0.1:5000`
 
-If everything installed correctly, you should see a screen like this:
+If everything installed correctly, you should see a screen like this in your browser:
 
 ![Hello World](screenshots/helloWorld.png)
 
+
+# Step 6: Try branching, committing, and opening a PR
+
+To test your ability to use git and GitHub's workflow, you will make a new git branch from this very repository, add your name to an HTML file, and push that branch to GitHub. Then you will make a Pull Request to have it merged with master.
+
+## Create a new branch
+
+Creating a new branch allows you to work a feature for your project. The feature you will be writing in this repository is simply adding your name to the list of contributors in `docs/index.html`. You shouldn't just add your name to the file without creating a branch first.
+
+- Open the VSCode Command Palette and type in "create branch" and select "Git: Create Branch ..."
+  ![Create Branch](screenshots/createBranch.png)
+
+- Pick a name for your branch. Typically you'd use 1 or 2 words joined by hyphens instead of spaces that describes the feature.
+
+  ![Branch Name](screenshots/createBranch.png)
+
+VSCode will create the branch and checkout your new branch for you. In the bottom left corner of VSCode you will see "master" turn into your new branch name. Whichever branch is currently checked out is displayed there.
+
+![Current Branch](screenshots/currentBranch.png)
+
+
+## Write code
+
+This is something you already know. Go to `docs/index.html` and add your name below all of the existing names in the same HTML format as the others.
+
+## Commit your changes
+
+Once you've completed a small part of your feature, you **commit** your changes to git. When you commit, you describe in a sentence or two what your changes are.
+
+- Click the VCS icon in the left side navigation bar of VSCode
+
+  ![VCS Nav](screenshots/vcsNav.png)
+
+- Under "Changes" you should see `index.html` which indicates git sees you have made revisions to this file. Click the plus sign next to it to "Stage" that change. This is so you can change multiple files at once, and commit them each separately if you wish.
+
+- Enter in a message that describes what you did. Something like: "adding myself to the list of contributors"
+-
 
 # VSCode Useful Shortcuts
 

@@ -89,6 +89,13 @@ def index():
         "pass_fail": "ms-python.python" in code_python_ext
     })
 
+    components.append({
+        "name": "VSCode GitLens Extension",
+        "installed_version": "eamodio.gitlens" if "eamodio.gitlens" in code_python_ext else "(not installed)",
+        "required_version": "N/A",
+        "pass_fail": "eamodio.gitlens" in code_python_ext
+    })
+
     return render_template_string(
         """
         <!DOCTYPE html>

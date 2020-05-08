@@ -74,6 +74,8 @@ standard cmd.exe:
 
 ## Windows Step Only: Modify your PATH variable
 
+Go to Step 4a if you are not on Windows!
+
 In order for Pipenv and Flask to work on the command line, we need to tell Windows where these new programs will be installed. To do so, you must edit your environment's PATH variables.
 
 - Open the start menu and start typing "path" until you see "Edit the system environment variables" and hit Enter

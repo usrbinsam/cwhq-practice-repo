@@ -176,18 +176,38 @@ Once you've completed a small part of your feature, you **commit** your changes 
 - Enter in a message that describes what you did. Something like: "adding myself to the list of contributors"
 - Click the Checkbox to commit your changes with your commit message.
 
-![git-commit](screenshots/gitCommit.png)
+  ![git-commit](screenshots/gitCommit.png)
 
 - Click the three horizontal dots above the textbox where you entered your commit message, and click Push. This will push your changes to GitHub's remote repository so you can open a pull request, and so others can see your changes.
 
-:warning: You must have "write" permission in GitHub in order to push to this repository, or you will get a Permission Denied message. Ask your Team Leader to add you if you cannot push.
+  ![git-push](screenshots/gitPush.png)
 
-![git-push](screenshots/gitPush.png)
+
+- Git will see this is a new branch and ask if you wish to publish it. Just click OK.
+
+  ![New Branch](screenshots/gitPublish.png)
+
+
+:warning: You must have "write" permission in GitHub in order to push to this repository, or you will get a Permission Denied message. Ask your Team Leader to add you if you cannot push.
 
 
 ## Make a Pull Request
 
-Go to this repository's GitHub page [here](https://github.com/usrbinsam/cwhq-practice-repo) and click Pull Requests
+Go to this repository's GitHub page [here](https://github.com/usrbinsam/cwhq-practice-repo) and click the Pull Requests tab.
+
+- Make sure you are logged in to GitHub.
+- GitHub see you just pushed a new branch and will offer to make a pull request for you. Click Compare & pull request
+'
+  ![New Pull Request](screenshots/githubNewBranch.png)
+
+- This opens a new screen where you can type in a title and description for what your proposed changes are. You and other contributors will be able to make comments on your Pull Request.
+
+  ![Open PR](screenshots/openPR.png)
+
+- Click Create Pull Request
+
+Now you must wait for a Project Leader to approve your pull request. GitHub will email you once it has been merged, or if anyone makes comments on your Pull Request to make any changes. If you need to make changes, just repeat the Commit & Push steps above, and GitHub will automatically include those changes in this PR for you.
+
 
 # VSCode Useful Shortcuts
 

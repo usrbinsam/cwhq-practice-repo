@@ -82,16 +82,23 @@ def index():
         "pass_fail": code_version != "(not installed)"
     })
 
+    if platform.system() != "darwin":
+        py_installed = "ms-python.python" if "ms-python.python" in code_python_ext else "(not installed)"
+        gl_installed = "eamodio.gitlens" if "eamodio.gitlens" in code_python_ext else "(not installed)"
+    else:
+        py_installed = "(unable to check on macOS)"
+        gl_installed = "(unable to check on macOS)"
+
     components.append({
         "name": "VSCode Python Extension",
-        "installed_version": "ms-python.python" if "ms-python.python" in code_python_ext else "(not installed)",
+        "installed_version": py_installed,
         "required_version": "N/A",
         "pass_fail": "ms-python.python" in code_python_ext
     })
 
     components.append({
         "name": "VSCode GitLens Extension",
-        "installed_version": "eamodio.gitlens" if "eamodio.gitlens" in code_python_ext else "(not installed)",
+        "installed_version": gl_installed,
         "required_version": "N/A",
         "pass_fail": "eamodio.gitlens" in code_python_ext
     })

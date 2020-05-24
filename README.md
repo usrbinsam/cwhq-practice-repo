@@ -37,6 +37,28 @@ development environment setup to work with a team on a simple Flask project.
 
 ## macOS
 
+ - Install [homebrew](https://brew.sh/)
+    - Open the terminal app and run the following command 
+  `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  `
+    - After homebrew is installed run `brew doctor` from the therminal to verify everthing is setup correctly.
+
+  - With homebrew installed now install the following from terminal `brew install git python`
+
+  - Verify python is installed by running `python3 -V` in the terminal.
+
+  - Now you need to configure git.
+      - Set git user name:
+      `
+      git config --global user.name "Your Name Here"
+      `
+      - Set git user email:
+      `
+      git config --global user.email            youremailhere@gmail.com`
+      `
+  - With all the above complete proceed to Step 2
+
+
 TODO
 
 # Step 2: Clone this repository with Git

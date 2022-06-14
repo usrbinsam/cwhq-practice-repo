@@ -65,7 +65,7 @@ def index():
         "name": "Flask",
         "installed_version": __version__,
         "required_version": "1.1+",
-        "pass_fail": __version__.startswith("1.1")
+        "pass_fail": __version__.startswith("2.1")
     })
 
     components.append({

@@ -67,7 +67,7 @@ standard cmd.exe:
 
 - Use `Ctrl+Shift+P` to open the command pallette.
 - Start typing in "select default shell" until `Terminal: Select Default Shell` is highlighted, then press `Enter`
-- Click the `Command Prompt` option
+- Click the `Git Bash` option
 
 
 # Step 4 Python Module Setup

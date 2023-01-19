@@ -13,12 +13,6 @@ MATCH_GIT_VERSION = re.compile(r"^git version ([0-9]+)\.([0-9]+)\.([0-9]+)")
 @app.route("/")
 def index():
 
-    try:
-        import pymysql
-        pymysql_version = pymysql.__version__
-    except ImportError:
-        pymysql_version = "(not installed)"
-
     components = []
 
     try:
@@ -66,13 +60,6 @@ def index():
         "installed_version": __version__,
         "required_version": "1.1+",
         "pass_fail": __version__.startswith("1.1")
-    })
-
-    components.append({
-        "name": "PyMySQL",
-        "installed_version": pymysql_version,
-        "required_version": "any",
-        "pass_fail": pymysql_version != "(not installed)"
     })
 
     components.append({

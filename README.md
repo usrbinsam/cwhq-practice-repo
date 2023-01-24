@@ -138,7 +138,7 @@ Flask applications can be launched several different ways, but the most common w
 
 If everything installed correctly, you should see a screen like this in your browser:
 
-![Hello World](screenshots/helloWorld.png)
+![Hello World](screenshots/hello_flask.png)
 
 
 # Step 6: Try branching, committing, and opening a PR

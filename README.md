@@ -48,7 +48,7 @@ A good could be a Projects folder created inside your Documents folder.
 - Open VSCode for the first time.
 - Launch the Command Palette (Windows: `Ctrl+Shift+P`, macOS: `⌘⇧P`) and type in `clone`
 - **Git: Clone** will appear - press `Enter`
-- Paste in the URL for this repository: `git@github.com:cwhq-internship/cwhq-practice-repo.git` and press `Enter`
+- Paste in the URL for this repository: `https://github.com/cwhq-internship/cwhq-practice-repo.git` and press `Enter`
 - A folder window will appear. Navigate to the projects folder you created and click the **Select Repository Location** button.
 - You may be asked to enter your GitHub credentials. Enter the username and password to your GitHub account if prompted.
 - VSCode will offer to open the project for you - go ahead and click Open Project.

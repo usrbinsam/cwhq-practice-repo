@@ -208,7 +208,7 @@ Go to this repository's GitHub page [here](https://github.com/usrbinsam/cwhq-pra
 
 - Click Create Pull Request
 
-Now you must wait for a Project Leader to approve your pull request. GitHub will email you once it has been merged, or if anyone makes comments on your Pull Request to make any changes. If you need to make changes, just repeat the Commit & Push steps above, and GitHub will automatically include those changes in this PR for you.
+Now you must wait for a Project Leader to approve your pull request. GitHub will email you once it has been merged, or if anyone makes comments on your Pull Request to make any changes. If you need to make changes, just repeat the Commit & Push steps above, and GitHub will automatically include those changes in this PR for you. After your pull request is merged you can see your contribution [here](https://cwhq-internship.github.io/cwhq-practice-repo/)
 
 
 # VSCode Useful Shortcuts

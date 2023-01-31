@@ -13,12 +13,6 @@ MATCH_GIT_VERSION = re.compile(r"^git version ([0-9]+)\.([0-9]+)\.([0-9]+)")
 @app.route("/")
 def index():
 
-    try:
-        import pymysql
-        pymysql_version = pymysql.__version__
-    except ImportError:
-        pymysql_version = "(not installed)"
-
     components = []
 
     try:
@@ -35,10 +29,14 @@ def index():
     try:
         code_version = check_output(["code", "--version"], shell=True).decode("utf8")
         code_version = code_version.split("\n")[0]
-        code_python_ext = check_output(["code", "--list-extensions"], shell=True).decode("utf8")
+        # The command below is not working as expected
+        # code_python_ext = check_output(["code", "--list-extensions"], shell=True).decode("utf8")
     except (CalledProcessError, FileNotFoundError):
         code_version = "(not installed)"
-        code_python_ext = "(not installed)"
+        # code_python_ext = "(not installed)"
+
+    flask_major_version = int(__version__.split(".")[0])
+
 
     components.append({
         "name": "Operating System",
@@ -64,15 +62,8 @@ def index():
     components.append({
         "name": "Flask",
         "installed_version": __version__,
-        "required_version": "1.1+",
-        "pass_fail": __version__.startswith("1.1")
-    })
-
-    components.append({
-        "name": "PyMySQL",
-        "installed_version": pymysql_version,
-        "required_version": "any",
-        "pass_fail": pymysql_version != "(not installed)"
+        "required_version": "2.0+",
+        "pass_fail": flask_major_version >= 2
     })
 
     components.append({
@@ -82,26 +73,26 @@ def index():
         "pass_fail": code_version != "(not installed)"
     })
 
-    if platform.system() != "darwin":
-        py_installed = "ms-python.python" if "ms-python.python" in code_python_ext else "(not installed)"
-        gl_installed = "eamodio.gitlens" if "eamodio.gitlens" in code_python_ext else "(not installed)"
-    else:
-        py_installed = "(unable to check on macOS)"
-        gl_installed = "(unable to check on macOS)"
+    # if platform.system() != "darwin":
+        # py_installed = "ms-python.python" if "ms-python.python" in code_python_ext else "(not installed)"
+        # gl_installed = "eamodio.gitlens" if "eamodio.gitlens" in code_python_ext else "(not installed)"
+    # else:
+        # py_installed = "(unable to check on macOS)"
+        # gl_installed = "(unable to check on macOS)"
 
-    components.append({
-        "name": "VSCode Python Extension",
-        "installed_version": py_installed,
-        "required_version": "N/A",
-        "pass_fail": "ms-python.python" in code_python_ext
-    })
+    # components.append({
+    #     "name": "VSCode Python Extension",
+    #     "installed_version": py_installed,
+    #     "required_version": "N/A",
+    #     "pass_fail": "ms-python.python" in code_python_ext
+    # })
 
-    components.append({
-        "name": "VSCode GitLens Extension",
-        "installed_version": gl_installed,
-        "required_version": "N/A",
-        "pass_fail": "eamodio.gitlens" in code_python_ext
-    })
+    # components.append({
+    #     "name": "VSCode GitLens Extension",
+    #     "installed_version": gl_installed,
+    #     "required_version": "N/A",
+    #     "pass_fail": "eamodio.gitlens" in code_python_ext
+    # })
 
     return render_template_string(
         """

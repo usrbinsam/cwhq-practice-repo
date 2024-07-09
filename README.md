@@ -48,7 +48,7 @@ A good could be a Projects folder created inside your Documents folder.
 - Open VSCode for the first time.
 - Launch the Command Palette (Windows: `Ctrl+Shift+P`, macOS: `⌘⇧P`) and type in `clone`
 - **Git: Clone** will appear - press `Enter`
-- Paste in the URL for this repository: `https://github.com/usrbinsam/cwhq-practice-repo.git` and press `Enter`
+- Paste in the URL for this repository: `https://github.com/cwhq-internship/cwhq-practice-repo.git` and press `Enter`
 - A folder window will appear. Navigate to the projects folder you created and click the **Select Repository Location** button.
 - You may be asked to enter your GitHub credentials. Enter the username and password to your GitHub account if prompted.
 - VSCode will offer to open the project for you - go ahead and click Open Project.
@@ -138,7 +138,7 @@ Flask applications can be launched several different ways, but the most common w
 
 If everything installed correctly, you should see a screen like this in your browser:
 
-![Hello World](screenshots/helloWorld.png)
+![Hello World](screenshots/hello_flask.png)
 
 
 # Step 6: Try branching, committing, and opening a PR
@@ -208,7 +208,7 @@ Go to this repository's GitHub page [here](https://github.com/usrbinsam/cwhq-pra
 
 - Click Create Pull Request
 
-Now you must wait for a Project Leader to approve your pull request. GitHub will email you once it has been merged, or if anyone makes comments on your Pull Request to make any changes. If you need to make changes, just repeat the Commit & Push steps above, and GitHub will automatically include those changes in this PR for you.
+Now you must wait for a Project Leader to approve your pull request. GitHub will email you once it has been merged, or if anyone makes comments on your Pull Request to make any changes. If you need to make changes, just repeat the Commit & Push steps above, and GitHub will automatically include those changes in this PR for you. After your pull request is merged you can see your contribution [here](https://cwhq-internship.github.io/cwhq-practice-repo/)
 
 
 # VSCode Useful Shortcuts

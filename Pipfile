@@ -9,7 +9,6 @@ flake8 = "*"
 [packages]
 pylint = "*"
 Flask = "*"
-PyMySQL = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3"
